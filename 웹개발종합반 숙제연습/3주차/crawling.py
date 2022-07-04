@@ -19,8 +19,6 @@ soup = BeautifulSoup(data.text, 'html.parser')
 #body-content > div.newest-list > div > table > tbody > tr:nth-child(1) > td.info > a.artist.ellipsis 가수이름
 # .strip() 공백을 지워주는 함수
 
-# rank =soup.select('td.number')
-# print(rank.text) 실패 기억안남
 
 
 all_list = soup.select('#body-content > div.newest-list > div > table > tbody > tr')
